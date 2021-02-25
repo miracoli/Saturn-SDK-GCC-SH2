@@ -6,7 +6,7 @@ set -e
 mkdir -p $BUILDDIR/libstdc++
 cd $BUILDDIR/libstdc++
 
-export PATH=$INSTALLDIR/bin:$PATH
+export PATH="$INSTALLDIR/bin:$PATH"
 export CROSS=${PROGRAM_PREFIX}
 export CC=${CROSS}gcc
 export CXX=${CROSS}g++

@@ -6,7 +6,7 @@ set -e
 mkdir -p $BUILDDIR/newlib
 cd $BUILDDIR/newlib
 
-export PATH=$INSTALLDIR/bin:$PATH
+export PATH="$INSTALLDIR/bin:$PATH"
 export CROSS=${PROGRAM_PREFIX}
 export CC_FOR_TARGET=${CROSS}gcc
 export LD_FOR_TARGET=${CROSS}ld
